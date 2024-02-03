@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+  margin: 2rem;
+}
+
+td {
+  padding: .5rem;
+  text-align: right;
+}
+
+tr:nth-last-child(n+2) {
+  border-bottom: 1px solid #aaa;
+}
+
+
+tr > td:first-child {
+  border-right: 2px solid #555;
+}
+
+td:not(:first-child):not(:last-child)::after {
+  content: ",";
+}
+
+.flex_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
